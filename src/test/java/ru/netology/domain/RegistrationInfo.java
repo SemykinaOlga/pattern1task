@@ -1,4 +1,4 @@
-package domain;
+package ru.netology.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,9 +8,6 @@ import lombok.Data;
 @AllArgsConstructor
 public class RegistrationInfo {
     private String city;
-    private String dateFirstMeeting;
-    private String lastName;
-    private String firstName;
+    private String Name;
     private String phoneNumber;
-    private String dateSecondMeeting;
 }
