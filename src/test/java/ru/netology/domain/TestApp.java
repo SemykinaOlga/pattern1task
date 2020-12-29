@@ -25,8 +25,8 @@ public class TestApp {
         $("[data-test-id=agreement]").click();
         $(".button").click();
         $("[data-test-id=success-notification]").shouldBe(visible);
-//        $("[data-test-id=success-notification] .notification__content")
-//                .shouldHave(exactText("Встреча успешно забронирована на " + getDate(3)));
+        $("[data-test-id=success-notification] .notification__content")
+                .shouldHave(exactText("Встреча успешно запланирована на " + getDate(3)));
         $("[data-test-id=date] input").doubleClick();
         $("[data-test-id=date] input").sendKeys(Keys.BACK_SPACE);
         $("[data-test-id=date] input").setValue(getDate(6));
